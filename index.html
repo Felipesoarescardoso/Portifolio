@@ -4,61 +4,410 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
+  <title>Weverson Felipe — Analista de Sistemas</title>
+  <meta name="description"
+    content="Portfólio de Weverson Felipe Soares Cardoso, Analista de Sistemas com 8+ anos de experiência em integrações backend, APIs, nuvem e automação.">
+  <meta name="author" content="Weverson Felipe Soares Cardoso">
+  <meta name="theme-color" content="#222222">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Weverson Felipe — Analista de Sistemas">
+  <meta property="og:description"
+    content="Portfólio de Weverson Felipe Soares Cardoso, Analista de Sistemas com 8+ anos de experiência em integrações backend, APIs, nuvem e automação.">
+  <meta property="og:image" content="assets/foto-perfil.png">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23222'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%234f9cff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/foto-perfil.webp" type="image/webp">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-var-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/space-grotesk-latin.woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.className += " js";</script>
 </head>
 
 <body>
 
-  <header>
-    <h1>Felipe Soares Cardoso</h1>
-    <p>Analista de Sistemas</p>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="marca" href="#topo">Felipe<span>.</span></a>
 
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Analista de Sistemas com mais de 8 anos de experiência, atuando em sistemas desktop, web, embarcados
-e infraestrutura, em diversos setores. Especializado em desenvolvimento e manutenção de sistemas,
-integração via APIs, automação comercial, controle de ponto e acesso, além de prestar suporte técnico e
-de redes. Possuo sólido conhecimento em linguagens como PHP, JavaScript e VB.NET, além de bancos
-de dados SQL Server e Oracle. Proativo, com forte habilidade em resolver problemas técnicos e otimizar
-processos em ambientes de alta complexidade.</p>
-  </section>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-  <section id="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="projetos">
-      <div class="card">
-        <h3>Projeto 1</h3>
-        <p>Descrição breve do projeto e tecnologias utilizadas.</p>
-      </div>
-      <div class="card">
-        <h3>Projeto 2</h3>
-        <p>Descrição breve do projeto e tecnologias utilizadas.</p>
-      </div>
-      <div class="card">
-        <h3>Projeto 3</h3>
-        <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+      <nav id="menu-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#educacao">Educação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+
+  <header id="topo">
+    <div class="header-inner">
+      <picture class="foto-wrap">
+        <source srcset="assets/foto-perfil.webp" type="image/webp">
+        <img class="foto-perfil" src="assets/foto-perfil.png" alt="Foto de Weverson Felipe Soares Cardoso"
+          width="160" height="160" fetchpriority="high" decoding="async">
+      </picture>
+
+      <h1>Weverson Felipe Soares Cardoso</h1>
+      <p class="cargo">Analista de Sistemas &middot; Fortaleza - CE</p>
+      <p class="tagline">Integração backend &middot; APIs &middot; Nuvem &middot; Automação</p>
+
+      <div class="acoes-header">
+        <a class="btn" href="assets/curriculo-felipe.pdf" target="_blank" rel="noopener">&#11015; Baixar
+          Currículo</a>
+        <a class="btn btn-claro" href="https://linkedin.com/in/felipe-soares-9264367b" target="_blank"
+          rel="noopener">LinkedIn</a>
+        <a class="btn btn-claro" href="mailto:wfelipe.analista@gmail.com">E-mail</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:seuemail@email.com">wfelipe.analista@gmail.com</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">felipe-soares-9264367b</a></p>
-    <p>GitHub: <a href="#" target="_blank">Felipesoarescardoso</a></p>
-  </section>
+  <main>
+
+    <section id="sobre" class="reveal">
+      <h2>Sobre Mim</h2>
+      <p>
+        Analista de Sistemas com mais de 8 anos de experiência no desenho, desenvolvimento e otimização de
+        sistemas corporativos escaláveis, arquiteturas de microsserviços e ecossistemas de integração backend
+        de alta performance (.NET/C#, SQL Server, Oracle). Ampla vivência em engenharia de requisitos,
+        modernização de sistemas legados, automação de processos de negócio e governança de dados em ambientes
+        de alta volatilidade (Varejo, Telecom e Setor Automotivo).
+      </p>
+      <p>
+        Experiência prática na implementação de pipelines CI/CD, conteinerização e arquiteturas em nuvem
+        (AWS/Azure), combinando visão técnica avançada com entrega de valor estratégico para o negócio.
+      </p>
+      <p class="badge">
+        &#9733; AWS Certified Cloud Practitioner
+      </p>
+    </section>
+
+    <section id="habilidades" class="reveal">
+      <h2>Habilidades Técnicas</h2>
+      <div class="grade">
+        <div class="card">
+          <h3>Arquitetura &amp; Engenharia</h3>
+          <ul class="tags">
+            <li>Microsserviços</li>
+            <li>EDA</li>
+            <li>APIs REST/SOAP</li>
+            <li>SOLID</li>
+            <li>Design Patterns</li>
+            <li>Integração de Legados</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Backend &amp; Linguagens</h3>
+          <ul class="tags">
+            <li>C#</li>
+            <li>.NET / ASP.NET Core</li>
+            <li>VB.NET</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>Shell Scripting</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Bancos de Dados &amp; Tuning</h3>
+          <ul class="tags">
+            <li>SQL Server</li>
+            <li>Oracle EBS R12</li>
+            <li>T-SQL / PL-SQL</li>
+            <li>Query Tuning</li>
+            <li>Stored Procedures</li>
+            <li>Triggers</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Nuvem &amp; DevOps</h3>
+          <ul class="tags">
+            <li>AWS (S3)</li>
+            <li>Azure</li>
+            <li>Docker</li>
+            <li>CI/CD (GitLab)</li>
+            <li>Linux</li>
+            <li>Windows Server</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Qualidade &amp; Observabilidade</h3>
+          <ul class="tags">
+            <li>Testes Automatizados</li>
+            <li>Auditoria</li>
+            <li>Grafana</li>
+            <li>MikroTik</li>
+            <li>NOC / Telecom</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="reveal">
+      <h2>Experiência Profissional</h2>
+      <ol class="timeline">
+        <li>
+          <div class="cargo">
+            <h3>Analista de Sistemas e Integração</h3>
+            <span class="empresa">Grupo Carmais</span>
+            <span class="periodo">2025 — 2026</span>
+          </div>
+          <ul>
+            <li>Arquitetura e liderança de pipelines de integração backend e APIs REST/SOAP de alto rendimento
+              para interconexão de ecossistemas ERP e softwares corporativos.</li>
+            <li>Padrões de arquitetura sustentáveis e princípios SOLID para alta disponibilidade,
+              escalabilidade e baixa latência em serviços vitais.</li>
+            <li>Otimização e tuning avançado de queries em Oracle EBS R12 e SQL Server, eliminando gargalos
+              em operações transacionais de alto volume.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Analista de QA</h3>
+            <span class="empresa">NewWave Telecom</span>
+            <span class="periodo">2024 — 2025</span>
+          </div>
+          <ul>
+            <li>Frameworks e scripts de validação automatizada e testes de integração, garantindo tolerância a
+              falhas e resiliência nos serviços core de backend.</li>
+            <li>Auditorias de fluxo de dados e análises avançadas via SQL para integridade, segurança e
+              conformidade.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Suporte Nível 2 &amp; Analista de Nuvem</h3>
+            <span class="empresa">IP2 Internet</span>
+            <span class="periodo">2023 — 2024</span>
+          </div>
+          <ul>
+            <li>Gestão de infraestrutura crítica de redes corporativas e telecom com Zabbix e CLI
+              Linux/MikroTik/Huawei.</li>
+            <li>Automação de rotinas de monitoramento e manutenção proativa de fibra óptica, reduzindo MTTR e
+              downtime.</li>
+            <li>Suporte e configuração de redes em arquiteturas de nuvem híbrida (AWS e Azure).</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Analista de Sistemas Pleno</h3>
+            <span class="empresa">Maranguape Laticínios</span>
+            <span class="periodo">2023 — 2024</span>
+          </div>
+          <ul>
+            <li>Sustentação e expansão das regras de negócio backend do ERP TOTVS Protheus.</li>
+            <li>Refatoração de consultas T-SQL complexas e otimização de rotinas de processamento.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Analista de Sistemas</h3>
+            <span class="empresa">PagueMenos</span>
+            <span class="periodo">2021 — 2023</span>
+          </div>
+          <ul>
+            <li>Levantamento de requisitos e sustentação de sistemas críticos de alto volume transacional no
+              varejo.</li>
+            <li>Mapeamento de processos, identificação de gargalos de arquitetura e planos de melhoria contínua
+              com SLAs rigorosos.</li>
+            <li>Diagnóstico e resolução de incidentes complexos via análise avançada de dados relacionais.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Desenvolvedor de Software Backend</h3>
+            <span class="empresa">Mix Ti</span>
+            <span class="periodo">2019 — 2022</span>
+          </div>
+          <ul>
+            <li>Lógicas de negócio e microsserviços em C#, VB.NET e PHP integrados ao SQL Server para
+              automação comercial e sistemas legados.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="cargo">
+            <h3>Suporte Técnico</h3>
+            <span class="empresa">Biosec IT / PontoCard</span>
+            <span class="periodo">2009 — 2021</span>
+          </div>
+          <ul>
+            <li>Liderança técnica e gestão de servidores (Windows/Linux), virtualização e observabilidade
+              (Zabbix/Grafana).</li>
+            <li>Implantação de ecossistemas corporativos de controle de acesso de grande porte (ex.: Ministério
+              Público do Ceará — MP-CE).</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projetos" class="reveal">
+      <h2>Meus Projetos</h2>
+      <div class="grade">
+
+        <article class="card projeto">
+          <h3>Admitidos RM Dashboard</h3>
+          <p>Dashboard de admitidos para integração entre TOTVS RM e Faceum, acompanhando o fluxo de admissão
+            de ponta a ponta.</p>
+          <ul class="tags">
+            <li>CSS</li>
+            <li>Dashboard</li>
+            <li>TOTVS RM</li>
+          </ul>
+          <a class="btn" href="https://github.com/Felipesoarescardoso/admitidosrm-dashboard" target="_blank"
+            rel="noopener">Ver repositório</a>
+        </article>
+
+        <article class="card projeto">
+          <h3>PHP / Flutter CRUD</h3>
+          <p>API CRUD completa em PHP consumida por aplicativo Flutter — exemplo de integração mobile-backend
+            com operações CREATE, READ, UPDATE e DELETE.</p>
+          <ul class="tags">
+            <li>PHP</li>
+            <li>Flutter</li>
+            <li>API REST</li>
+          </ul>
+          <a class="btn" href="https://github.com/Felipesoarescardoso/php_fluter_crud_full" target="_blank"
+            rel="noopener">Ver repositório</a>
+        </article>
+
+        <article class="card projeto">
+          <h3>E-commerce de Eletrônicos</h3>
+          <p>Loja virtual de produtos eletrônicos com catálogo, carrinho e checkout, publicada
+            online na Vercel.</p>
+          <ul class="tags">
+            <li>E-commerce</li>
+            <li>Front-end</li>
+            <li>Vercel</li>
+          </ul>
+          <div class="acoes">
+            <a class="btn" href="https://e-commerce-one-green.vercel.app" target="_blank" rel="noopener">Demo</a>
+            <a class="btn btn-secundario"
+              href="https://github.com/Felipesoarescardoso/E-commerce-" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="card projeto">
+          <h3>ID Telegram</h3>
+          <p>Ferramenta web para identificar rapidamente o ID de usuários do Telegram e agilizar automações
+            com bots.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>Automação</li>
+            <li>Vercel</li>
+          </ul>
+          <div class="acoes">
+            <a class="btn" href="https://id-telegram.vercel.app" target="_blank" rel="noopener">Demo</a>
+            <a class="btn btn-secundario" href="https://github.com/Felipesoarescardoso/id_telegram" target="_blank"
+              rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="card projeto">
+          <h3>Gerador de Senhas (COBOL)</h3>
+          <p>Gerador de senhas com várias funcionalidades em linguagem COBOL, sob licença MIT.</p>
+          <ul class="tags">
+            <li>COBOL</li>
+            <li>CLI</li>
+            <li>MIT</li>
+          </ul>
+          <a class="btn" href="https://github.com/Felipesoarescardoso/Cobol-gerador-senhas" target="_blank"
+            rel="noopener">Ver repositório</a>
+        </article>
+
+        <article class="card projeto">
+          <h3>Gerador de QR Code</h3>
+          <p>Utilitário open source para geração de QR Codes a partir de textos ou URLs.</p>
+          <ul class="tags">
+            <li>Open Source</li>
+            <li>Utilitário</li>
+          </ul>
+          <a class="btn" href="https://github.com/Felipesoarescardoso/Gerador-Qrcode" target="_blank"
+            rel="noopener">Ver repositório</a>
+        </article>
+
+      </div>
+
+      <h2 class="subtitulo">Projetos de Impacto</h2>
+      <div class="grade">
+        <article class="card">
+          <h3>Automação Fiscal</h3>
+          <p>Motor automatizado com agendamento diário para identificação e reprocessamento assíncrono de
+            documentos fiscais retidos, eliminando inconsistências tributárias.</p>
+        </article>
+        <article class="card">
+          <h3>Pipeline de RH — DIMASTEC × TOTVS RM</h3>
+          <p>Integração ponta a ponta sem intervenção humana: sincronização de ponto, admissões, demissões e
+            movimentações corporativas.</p>
+        </article>
+        <article class="card">
+          <h3>Integração de APIs SCANIA</h3>
+          <p>Rotinas de integração entre a montadora SCANIA e o ERP Dealernet, automatizando o fluxo
+            transacional do setor automotivo.</p>
+        </article>
+        <article class="card">
+          <h3>Motor Transacional CNAB</h3>
+          <p>Pipeline backend de conciliação bancária automatizada com triggers e stored procedures otimizadas
+            para auditoria em larga escala.</p>
+        </article>
+        <article class="card">
+          <h3>Motor de Comissões</h3>
+          <p>Módulo transacional de alta concorrência para cálculo automatizado de comissões em tempo real no
+            ERP.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="educacao" class="reveal">
+      <h2>Educação &amp; Certificações</h2>
+      <div class="grade">
+        <div class="card">
+          <h3>Formação Acadêmica</h3>
+          <ul class="lista-simples">
+            <li><strong>Pós-Graduação em Ciência de Dados</strong> — Centro Universitário Wyden
+              (previsão 12/2026)</li>
+            <li><strong>Bacharelado em Análise e Desenvolvimento de Sistemas</strong> — Centro Universitário
+              Ateneu (concluído 12/2020)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Certificações</h3>
+          <ul class="tags">
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>Oracle EBS R12</li>
+            <li>Power BI Avançado</li>
+            <li>Tableau</li>
+            <li>Gestão Ágil de Projetos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="reveal">
+      <h2>Contato</h2>
+      <ul class="lista-contato">
+        <li><span>E-mail:</span> <a href="mailto:wfelipe.analista@gmail.com">wfelipe.analista@gmail.com</a></li>
+        <li><span>Telefone:</span> <a href="tel:+5585997375179">(85) 99737-5179</a></li>
+        <li><span>LinkedIn:</span>
+          <a href="https://linkedin.com/in/felipe-soares-9264367b" target="_blank" rel="noopener">felipe-soares-9264367b</a>
+        </li>
+        <li><span>GitHub:</span>
+          <a href="https://github.com/Felipesoarescardoso" target="_blank" rel="noopener">Felipesoarescardoso</a>
+        </li>
+        <li><span>Local:</span> Fortaleza - CE, Brasil</li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
-    <p>&copy; 2023 Felipe Soares Cardoso - Todos os direitos reservados</p>
+    <p>&copy; <span id="ano"></span> Weverson Felipe Soares Cardoso — Todos os direitos reservados</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
