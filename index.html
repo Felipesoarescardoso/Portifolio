@@ -29,18 +29,22 @@
     <div class="navbar-inner">
       <a class="marca" href="#topo">Felipe<span>.</span></a>
 
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-direita">
+        <nav id="menu-nav">
+          <a href="#sobre" data-en="About">Sobre</a>
+          <a href="#habilidades" data-en="Skills">Habilidades</a>
+          <a href="#experiencia" data-en="Experience">Experiência</a>
+          <a href="#projetos" data-en="Projects">Projetos</a>
+          <a href="#educacao" data-en="Education">Educação</a>
+          <a href="#contato" data-en="Contact">Contato</a>
+        </nav>
 
-      <nav id="menu-nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#educacao">Educação</a>
-        <a href="#contato">Contato</a>
-      </nav>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Change language">EN</button>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -53,12 +57,16 @@
       </picture>
 
       <h1>Weverson Felipe Soares Cardoso</h1>
-      <p class="cargo">Analista de Sistemas &middot; Fortaleza - CE</p>
-      <p class="tagline">Integração backend &middot; APIs &middot; Nuvem &middot; Automação</p>
+      <p class="cargo" data-en="Systems Analyst &middot; Fortaleza - CE">Analista de Sistemas &middot; Fortaleza -
+        CE</p>
+      <p class="tagline">APIs &middot; <span data-en="Cloud">Nuvem</span> &middot;
+        <span data-en="Automation">Automação</span> &middot; <span data-en="Robot">Robô</span> &middot; RPA &middot;
+        SQL Reports &middot; <span data-en="Scraping">Scrapings</span> &middot; BI
+      </p>
 
       <div class="acoes-header">
-        <a class="btn" href="assets/curriculo-felipe.pdf" target="_blank" rel="noopener">&#11015; Baixar
-          Currículo</a>
+        <a class="btn" href="assets/curriculo-felipe.pdf" target="_blank" rel="noopener"
+          data-en="&#8595; Download CV">&#11015; Baixar Currículo</a>
         <a class="btn btn-claro" href="https://linkedin.com/in/felipe-soares-9264367b" target="_blank"
           rel="noopener">LinkedIn</a>
         <a class="btn btn-claro" href="mailto:wfelipe.analista@gmail.com">E-mail</a>
@@ -68,16 +76,40 @@
 
   <main>
 
+    <section class="stats reveal" aria-label="Números">
+      <div class="stat">
+        <span class="numero" data-alvo="8" data-sufixo="+">0</span>
+        <span class="rotulo" data-en="years of experience">anos de experiência</span>
+      </div>
+      <div class="stat">
+        <span class="numero" data-alvo="7">0</span>
+        <span class="rotulo" data-en="companies">empresas</span>
+      </div>
+      <div class="stat">
+        <span class="numero" data-alvo="6" data-sufixo="+">0</span>
+        <span class="rotulo" data-en="public projects">projetos públicos</span>
+      </div>
+      <div class="stat">
+        <span class="numero" data-alvo="5">0</span>
+        <span class="rotulo" data-en="certifications">certificações</span>
+      </div>
+    </section>
+
     <section id="sobre" class="reveal">
-      <h2>Sobre Mim</h2>
-      <p>
+      <h2 data-en="About Me">Sobre Mim</h2>
+      <p data-en="Systems Analyst with 8+ years of experience designing, developing and optimizing scalable
+        corporate systems, microservice architectures and high-performance backend integration ecosystems
+        (.NET/C#, SQL Server, Oracle). Broad experience in requirements engineering, legacy system
+        modernization, business process automation and data governance in high-volatility environments
+        (Retail, Telecom and Automotive).">
         Analista de Sistemas com mais de 8 anos de experiência no desenho, desenvolvimento e otimização de
         sistemas corporativos escaláveis, arquiteturas de microsserviços e ecossistemas de integração backend
         de alta performance (.NET/C#, SQL Server, Oracle). Ampla vivência em engenharia de requisitos,
         modernização de sistemas legados, automação de processos de negócio e governança de dados em ambientes
         de alta volatilidade (Varejo, Telecom e Setor Automotivo).
       </p>
-      <p>
+      <p data-en="Hands-on experience implementing CI/CD pipelines, containerization and cloud architectures
+        (AWS/Azure), combining advanced technical vision with strategic business value delivery.">
         Experiência prática na implementação de pipelines CI/CD, conteinerização e arquiteturas em nuvem
         (AWS/Azure), combinando visão técnica avançada com entrega de valor estratégico para o negócio.
       </p>
@@ -87,21 +119,21 @@
     </section>
 
     <section id="habilidades" class="reveal">
-      <h2>Habilidades Técnicas</h2>
+      <h2 data-en="Technical Skills">Habilidades Técnicas</h2>
       <div class="grade">
         <div class="card">
-          <h3>Arquitetura &amp; Engenharia</h3>
+          <h3 data-en="Architecture &amp; Engineering">Arquitetura &amp; Engenharia</h3>
           <ul class="tags">
-            <li>Microsserviços</li>
+            <li data-en="Microservices">Microsserviços</li>
             <li>EDA</li>
             <li>APIs REST/SOAP</li>
             <li>SOLID</li>
             <li>Design Patterns</li>
-            <li>Integração de Legados</li>
+            <li data-en="Legacy Integration">Integração de Legados</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Backend &amp; Linguagens</h3>
+          <h3>Backend &amp; <span data-en="Languages">Linguagens</span></h3>
           <ul class="tags">
             <li>C#</li>
             <li>.NET / ASP.NET Core</li>
@@ -113,7 +145,7 @@
           </ul>
         </div>
         <div class="card">
-          <h3>Bancos de Dados &amp; Tuning</h3>
+          <h3 data-en="Databases &amp; Tuning">Bancos de Dados &amp; Tuning</h3>
           <ul class="tags">
             <li>SQL Server</li>
             <li>Oracle EBS R12</li>
@@ -124,7 +156,7 @@
           </ul>
         </div>
         <div class="card">
-          <h3>Nuvem &amp; DevOps</h3>
+          <h3 data-en="Cloud &amp; DevOps">Nuvem &amp; DevOps</h3>
           <ul class="tags">
             <li>AWS (S3)</li>
             <li>Azure</li>
@@ -135,10 +167,10 @@
           </ul>
         </div>
         <div class="card">
-          <h3>Qualidade &amp; Observabilidade</h3>
+          <h3 data-en="Quality &amp; Observability">Qualidade &amp; Observabilidade</h3>
           <ul class="tags">
-            <li>Testes Automatizados</li>
-            <li>Auditoria</li>
+            <li data-en="Automated Testing">Testes Automatizados</li>
+            <li data-en="Auditing">Auditoria</li>
             <li>Grafana</li>
             <li>MikroTik</li>
             <li>NOC / Telecom</li>
@@ -148,136 +180,189 @@
     </section>
 
     <section id="experiencia" class="reveal">
-      <h2>Experiência Profissional</h2>
+      <h2 data-en="Professional Experience">Experiência Profissional</h2>
       <ol class="timeline">
         <li>
           <div class="cargo">
-            <h3>Analista de Sistemas e Integração</h3>
+            <h3 data-en="Systems &amp; Integration Analyst">Analista de Sistemas e Integração</h3>
             <span class="empresa">Grupo Carmais</span>
             <span class="periodo">2025 — 2026</span>
           </div>
           <ul>
-            <li>Arquitetura e liderança de pipelines de integração backend e APIs REST/SOAP de alto rendimento
-              para interconexão de ecossistemas ERP e softwares corporativos.</li>
-            <li>Padrões de arquitetura sustentáveis e princípios SOLID para alta disponibilidade,
-              escalabilidade e baixa latência em serviços vitais.</li>
-            <li>Otimização e tuning avançado de queries em Oracle EBS R12 e SQL Server, eliminando gargalos
-              em operações transacionais de alto volume.</li>
+            <li data-en="Designed and led the build of high-performance backend integration pipelines and
+              REST/SOAP APIs to interconnect ERP ecosystems and complex corporate software.">
+              Arquitetura e liderança de pipelines de integração backend e APIs REST/SOAP de alto rendimento
+              para interconexão de ecossistemas ERP e softwares corporativos.
+            </li>
+            <li data-en="Sustainable architecture patterns and SOLID principles ensuring high availability,
+              scalability and low latency in mission-critical services.">
+              Padrões de arquitetura sustentáveis e princípios SOLID para alta disponibilidade,
+              escalabilidade e baixa latência em serviços vitais.
+            </li>
+            <li data-en="Advanced query optimization and tuning in Oracle EBS R12 and SQL Server, removing
+              bottlenecks in high-volume transactional operations.">
+              Otimização e tuning avançado de queries em Oracle EBS R12 e SQL Server, eliminando gargalos
+              em operações transacionais de alto volume.
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Analista de QA</h3>
+            <h3 data-en="QA Analyst">Analista de QA</h3>
             <span class="empresa">NewWave Telecom</span>
             <span class="periodo">2024 — 2025</span>
           </div>
           <ul>
-            <li>Frameworks e scripts de validação automatizada e testes de integração, garantindo tolerância a
-              falhas e resiliência nos serviços core de backend.</li>
-            <li>Auditorias de fluxo de dados e análises avançadas via SQL para integridade, segurança e
-              conformidade.</li>
+            <li data-en="Validation frameworks and integration test scripts ensuring fault tolerance,
+              resilience and high performance in core backend services.">
+              Frameworks e scripts de validação automatizada e testes de integração, garantindo tolerância a
+              falhas e resiliência nos serviços core de backend.
+            </li>
+            <li data-en="Data flow audits and advanced SQL analysis to ensure integrity, security and
+              compliance.">
+              Auditorias de fluxo de dados e análises avançadas via SQL para integridade, segurança e
+              conformidade.
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Suporte Nível 2 &amp; Analista de Nuvem</h3>
+            <h3 data-en="Level 2 Support &amp; Cloud Analyst">Suporte Nível 2 &amp; Analista de Nuvem</h3>
             <span class="empresa">IP2 Internet</span>
             <span class="periodo">2023 — 2024</span>
           </div>
           <ul>
-            <li>Gestão de infraestrutura crítica de redes corporativas e telecom com Zabbix e CLI
-              Linux/MikroTik/Huawei.</li>
-            <li>Automação de rotinas de monitoramento e manutenção proativa de fibra óptica, reduzindo MTTR e
-              downtime.</li>
-            <li>Suporte e configuração de redes em arquiteturas de nuvem híbrida (AWS e Azure).</li>
+            <li data-en="Management of critical corporate and telecom network infrastructure using Zabbix and
+              Linux/MikroTik/Huawei CLI.">
+              Gestão de infraestrutura crítica de redes corporativas e telecom com Zabbix e CLI
+              Linux/MikroTik/Huawei.
+            </li>
+            <li data-en="Automation of monitoring routines and proactive fiber optic maintenance, drastically
+              reducing MTTR and downtime.">
+              Automação de rotinas de monitoramento e manutenção proativa de fibra óptica, reduzindo MTTR e
+              downtime.
+            </li>
+            <li data-en="Support and configuration of networks in hybrid cloud architectures (AWS and Azure).">
+              Suporte e configuração de redes em arquiteturas de nuvem híbrida (AWS e Azure).
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Analista de Sistemas Pleno</h3>
+            <h3 data-en="Mid-Level Systems Analyst">Analista de Sistemas Pleno</h3>
             <span class="empresa">Maranguape Laticínios</span>
             <span class="periodo">2023 — 2024</span>
           </div>
           <ul>
-            <li>Sustentação e expansão das regras de negócio backend do ERP TOTVS Protheus.</li>
-            <li>Refatoração de consultas T-SQL complexas e otimização de rotinas de processamento.</li>
+            <li data-en="Supported and extended backend business rules of the TOTVS Protheus ERP.">
+              Sustentação e expansão das regras de negócio backend do ERP TOTVS Protheus.
+            </li>
+            <li data-en="Refactoring of complex T-SQL queries and optimization of processing routines.">
+              Refatoração de consultas T-SQL complexas e otimização de rotinas de processamento.
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Analista de Sistemas</h3>
+            <h3 data-en="Systems Analyst">Analista de Sistemas</h3>
             <span class="empresa">PagueMenos</span>
             <span class="periodo">2021 — 2023</span>
           </div>
           <ul>
-            <li>Levantamento de requisitos e sustentação de sistemas críticos de alto volume transacional no
-              varejo.</li>
-            <li>Mapeamento de processos, identificação de gargalos de arquitetura e planos de melhoria contínua
-              com SLAs rigorosos.</li>
-            <li>Diagnóstico e resolução de incidentes complexos via análise avançada de dados relacionais.</li>
+            <li data-en="Requirements gathering and support of critical high transactional volume systems in
+              retail.">
+              Levantamento de requisitos e sustentação de sistemas críticos de alto volume transacional no
+              varejo.
+            </li>
+            <li data-en="Process mapping, architecture bottleneck identification and continuous improvement
+              plans under strict SLAs.">
+              Mapeamento de processos, identificação de gargalos de arquitetura e planos de melhoria contínua
+              com SLAs rigorosos.
+            </li>
+            <li data-en="Diagnosis and resolution of complex incidents through advanced relational data
+              analysis.">
+              Diagnóstico e resolução de incidentes complexos via análise avançada de dados relacionais.
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Desenvolvedor de Software Backend</h3>
+            <h3 data-en="Backend Software Developer">Desenvolvedor de Software Backend</h3>
             <span class="empresa">Mix Ti</span>
             <span class="periodo">2019 — 2022</span>
           </div>
           <ul>
-            <li>Lógicas de negócio e microsserviços em C#, VB.NET e PHP integrados ao SQL Server para
-              automação comercial e sistemas legados.</li>
+            <li data-en="Business logic and microservices in C#, VB.NET and PHP integrated with SQL Server for
+              commercial automation platforms and legacy systems.">
+              Lógicas de negócio e microsserviços em C#, VB.NET e PHP integrados ao SQL Server para
+              automação comercial e sistemas legados.
+            </li>
           </ul>
         </li>
         <li>
           <div class="cargo">
-            <h3>Suporte Técnico</h3>
+            <h3 data-en="Technical Support">Suporte Técnico</h3>
             <span class="empresa">Biosec IT / PontoCard</span>
             <span class="periodo">2009 — 2021</span>
           </div>
           <ul>
-            <li>Liderança técnica e gestão de servidores (Windows/Linux), virtualização e observabilidade
-              (Zabbix/Grafana).</li>
-            <li>Implantação de ecossistemas corporativos de controle de acesso de grande porte (ex.: Ministério
-              Público do Ceará — MP-CE).</li>
+            <li data-en="Technical leadership and management of server infrastructure (Windows/Linux),
+              virtualization and observability (Zabbix/Grafana).">
+              Liderança técnica e gestão de servidores (Windows/Linux), virtualização e observabilidade
+              (Zabbix/Grafana).
+            </li>
+            <li data-en="Deployment of large-scale corporate access control ecosystems (e.g. Public
+              Prosecutor's Office of Ceará — MP-CE).">
+              Implantação de ecossistemas corporativos de controle de acesso de grande porte (ex.: Ministério
+              Público do Ceará — MP-CE).
+            </li>
           </ul>
         </li>
       </ol>
     </section>
 
     <section id="projetos" class="reveal">
-      <h2>Meus Projetos</h2>
+      <h2 data-en="My Projects">Meus Projetos</h2>
       <div class="grade">
 
         <article class="card projeto">
           <h3>Admitidos RM Dashboard</h3>
-          <p>Dashboard de admitidos para integração entre TOTVS RM e Faceum, acompanhando o fluxo de admissão
-            de ponta a ponta.</p>
+          <p data-en="Admissions dashboard for the TOTVS RM and Faceum integration, tracking the admission flow
+            end to end.">
+            Dashboard de admitidos para integração entre TOTVS RM e Faceum, acompanhando o fluxo de admissão
+            de ponta a ponta.
+          </p>
           <ul class="tags">
             <li>CSS</li>
             <li>Dashboard</li>
             <li>TOTVS RM</li>
           </ul>
           <a class="btn" href="https://github.com/Felipesoarescardoso/admitidosrm-dashboard" target="_blank"
-            rel="noopener">Ver repositório</a>
+            rel="noopener" data-en="View repository">Ver repositório</a>
         </article>
 
         <article class="card projeto">
           <h3>PHP / Flutter CRUD</h3>
-          <p>API CRUD completa em PHP consumida por aplicativo Flutter — exemplo de integração mobile-backend
-            com operações CREATE, READ, UPDATE e DELETE.</p>
+          <p data-en="Full PHP CRUD API consumed by a Flutter app — a mobile-backend integration example with
+            CREATE, READ, UPDATE and DELETE operations.">
+            API CRUD completa em PHP consumida por aplicativo Flutter — exemplo de integração mobile-backend
+            com operações CREATE, READ, UPDATE e DELETE.
+          </p>
           <ul class="tags">
             <li>PHP</li>
             <li>Flutter</li>
             <li>API REST</li>
           </ul>
           <a class="btn" href="https://github.com/Felipesoarescardoso/php_fluter_crud_full" target="_blank"
-            rel="noopener">Ver repositório</a>
+            rel="noopener" data-en="View repository">Ver repositório</a>
         </article>
 
         <article class="card projeto">
-          <h3>E-commerce de Eletrônicos</h3>
-          <p>Loja virtual de produtos eletrônicos com catálogo, carrinho e checkout, publicada
-            online na Vercel.</p>
+          <h3 data-en="Electronics E-commerce">E-commerce de Eletrônicos</h3>
+          <p data-en="Electronics online store with catalog, cart and checkout, published online on Vercel.">
+            Loja virtual de produtos eletrônicos com catálogo, carrinho e checkout, publicada
+            online na Vercel.
+          </p>
           <ul class="tags">
             <li>E-commerce</li>
             <li>Front-end</li>
@@ -286,125 +371,161 @@
           <div class="acoes">
             <a class="btn" href="https://e-commerce-one-green.vercel.app" target="_blank" rel="noopener">Demo</a>
             <a class="btn btn-secundario"
-              href="https://github.com/Felipesoarescardoso/E-commerce-" target="_blank" rel="noopener">Código</a>
+              href="https://github.com/Felipesoarescardoso/E-commerce-" target="_blank" rel="noopener"
+              data-en="Code">Código</a>
           </div>
         </article>
 
         <article class="card projeto">
           <h3>ID Telegram</h3>
-          <p>Ferramenta web para identificar rapidamente o ID de usuários do Telegram e agilizar automações
-            com bots.</p>
+          <p data-en="Web tool to quickly find Telegram user IDs and speed up bot automations.">
+            Ferramenta web para identificar rapidamente o ID de usuários do Telegram e agilizar automações
+            com bots.
+          </p>
           <ul class="tags">
             <li>HTML</li>
-            <li>Automação</li>
+            <li data-en="Automation">Automação</li>
             <li>Vercel</li>
           </ul>
           <div class="acoes">
             <a class="btn" href="https://id-telegram.vercel.app" target="_blank" rel="noopener">Demo</a>
             <a class="btn btn-secundario" href="https://github.com/Felipesoarescardoso/id_telegram" target="_blank"
-              rel="noopener">Código</a>
+              rel="noopener" data-en="Code">Código</a>
           </div>
         </article>
 
         <article class="card projeto">
-          <h3>Gerador de Senhas (COBOL)</h3>
-          <p>Gerador de senhas com várias funcionalidades em linguagem COBOL, sob licença MIT.</p>
+          <h3 data-en="Password Generator (COBOL)">Gerador de Senhas (COBOL)</h3>
+          <p data-en="Password generator with multiple features written in COBOL, released under the MIT
+            license.">
+            Gerador de senhas com várias funcionalidades em linguagem COBOL, sob licença MIT.
+          </p>
           <ul class="tags">
             <li>COBOL</li>
             <li>CLI</li>
             <li>MIT</li>
           </ul>
           <a class="btn" href="https://github.com/Felipesoarescardoso/Cobol-gerador-senhas" target="_blank"
-            rel="noopener">Ver repositório</a>
+            rel="noopener" data-en="View repository">Ver repositório</a>
         </article>
 
         <article class="card projeto">
-          <h3>Gerador de QR Code</h3>
-          <p>Utilitário open source para geração de QR Codes a partir de textos ou URLs.</p>
+          <h3 data-en="QR Code Generator">Gerador de QR Code</h3>
+          <p data-en="Open source utility to generate QR Codes from texts or URLs.">
+            Utilitário open source para geração de QR Codes a partir de textos ou URLs.
+          </p>
           <ul class="tags">
             <li>Open Source</li>
-            <li>Utilitário</li>
+            <li data-en="Utility">Utilitário</li>
           </ul>
           <a class="btn" href="https://github.com/Felipesoarescardoso/Gerador-Qrcode" target="_blank"
-            rel="noopener">Ver repositório</a>
+            rel="noopener" data-en="View repository">Ver repositório</a>
         </article>
 
       </div>
 
-      <h2 class="subtitulo">Projetos de Impacto</h2>
+      <h2 class="subtitulo" data-en="Impact Projects">Projetos de Impacto</h2>
       <div class="grade">
         <article class="card">
-          <h3>Automação Fiscal</h3>
-          <p>Motor automatizado com agendamento diário para identificação e reprocessamento assíncrono de
-            documentos fiscais retidos, eliminando inconsistências tributárias.</p>
+          <h3 data-en="Tax Automation">Automação Fiscal</h3>
+          <p data-en="Automated engine with daily scheduling to identify and asynchronously reprocess
+            withheld tax documents, eliminating tax inconsistencies.">
+            Motor automatizado com agendamento diário para identificação e reprocessamento assíncrono de
+            documentos fiscais retidos, eliminando inconsistências tributárias.
+          </p>
         </article>
         <article class="card">
-          <h3>Pipeline de RH — DIMASTEC × TOTVS RM</h3>
-          <p>Integração ponta a ponta sem intervenção humana: sincronização de ponto, admissões, demissões e
-            movimentações corporativas.</p>
+          <h3>HR Pipeline — DIMASTEC × TOTVS RM</h3>
+          <p data-en="End-to-end integration with no human intervention: time tracking, admissions,
+            dismissals and corporate movements.">
+            Integração ponta a ponta sem intervenção humana: sincronização de ponto, admissões, demissões e
+            movimentações corporativas.
+          </p>
         </article>
         <article class="card">
-          <h3>Integração de APIs SCANIA</h3>
-          <p>Rotinas de integração entre a montadora SCANIA e o ERP Dealernet, automatizando o fluxo
-            transacional do setor automotivo.</p>
+          <h3 data-en="SCANIA API Integration">Integração de APIs SCANIA</h3>
+          <p data-en="Integration routines between SCANIA and the Dealernet ERP, automating the transactional
+            flow of the automotive sector.">
+            Rotinas de integração entre a montadora SCANIA e o ERP Dealernet, automatizando o fluxo
+            transacional do setor automotivo.
+          </p>
         </article>
         <article class="card">
-          <h3>Motor Transacional CNAB</h3>
-          <p>Pipeline backend de conciliação bancária automatizada com triggers e stored procedures otimizadas
-            para auditoria em larga escala.</p>
+          <h3 data-en="CNAB Transactional Engine">Motor Transacional CNAB</h3>
+          <p data-en="Backend pipeline for automated bank reconciliation with optimized triggers and stored
+            procedures for large-scale auditing.">
+            Pipeline backend de conciliação bancária automatizada com triggers e stored procedures otimizadas
+            para auditoria em larga escala.
+          </p>
         </article>
         <article class="card">
-          <h3>Motor de Comissões</h3>
-          <p>Módulo transacional de alta concorrência para cálculo automatizado de comissões em tempo real no
-            ERP.</p>
+          <h3 data-en="Commission Engine">Motor de Comissões</h3>
+          <p data-en="High-concurrency transactional module for automated real-time commission calculation
+            inside the ERP.">
+            Módulo transacional de alta concorrência para cálculo automatizado de comissões em tempo real no
+            ERP.
+          </p>
         </article>
       </div>
     </section>
 
     <section id="educacao" class="reveal">
-      <h2>Educação &amp; Certificações</h2>
+      <h2 data-en="Education &amp; Certifications">Educação &amp; Certificações</h2>
       <div class="grade">
         <div class="card">
-          <h3>Formação Acadêmica</h3>
+          <h3 data-en="Academic Background">Formação Acadêmica</h3>
           <ul class="lista-simples">
-            <li><strong>Pós-Graduação em Ciência de Dados</strong> — Centro Universitário Wyden
-              (previsão 12/2026)</li>
-            <li><strong>Bacharelado em Análise e Desenvolvimento de Sistemas</strong> — Centro Universitário
-              Ateneu (concluído 12/2020)</li>
+            <li data-en="<strong>Postgraduate Diploma in Data Science</strong> — Wyden University Center
+              (expected 12/2026)"><strong>Pós-Graduação em Ciência de Dados</strong> — Centro Universitário
+              Wyden (previsão 12/2026)</li>
+            <li data-en="<strong>Bachelor's in Systems Analysis and Development</strong> — Ateneu University
+              Center (completed 12/2020)"><strong>Bacharelado em Análise e Desenvolvimento de Sistemas</strong>
+              — Centro Universitário Ateneu (concluído 12/2020)</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Certificações</h3>
+          <h3 data-en="Certifications">Certificações</h3>
           <ul class="tags">
             <li>AWS Certified Cloud Practitioner</li>
             <li>Oracle EBS R12</li>
-            <li>Power BI Avançado</li>
+            <li data-en="Power BI Advanced">Power BI Avançado</li>
             <li>Tableau</li>
-            <li>Gestão Ágil de Projetos</li>
+            <li data-en="Agile Project Management">Gestão Ágil de Projetos</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="contato" class="reveal">
-      <h2>Contato</h2>
+      <h2 data-en="Contact">Contato</h2>
       <ul class="lista-contato">
-        <li><span>E-mail:</span> <a href="mailto:wfelipe.analista@gmail.com">wfelipe.analista@gmail.com</a></li>
-        <li><span>Telefone:</span> <a href="tel:+5585997375179">(85) 99737-5179</a></li>
+        <li><span data-en="Email:">E-mail:</span> <a
+            href="mailto:wfelipe.analista@gmail.com">wfelipe.analista@gmail.com</a></li>
+        <li><span data-en="Phone:">Telefone:</span> <a href="tel:+5585997375179">(85) 99737-5179</a></li>
         <li><span>LinkedIn:</span>
-          <a href="https://linkedin.com/in/felipe-soares-9264367b" target="_blank" rel="noopener">felipe-soares-9264367b</a>
+          <a href="https://linkedin.com/in/felipe-soares-9264367b" target="_blank"
+            rel="noopener">felipe-soares-9264367b</a>
         </li>
         <li><span>GitHub:</span>
-          <a href="https://github.com/Felipesoarescardoso" target="_blank" rel="noopener">Felipesoarescardoso</a>
+          <a href="https://github.com/Felipesoarescardoso" target="_blank"
+            rel="noopener">Felipesoarescardoso</a>
         </li>
-        <li><span>Local:</span> Fortaleza - CE, Brasil</li>
+        <li><span data-en="Location:">Local:</span> Fortaleza - CE, <span data-en="Brazil">Brasil</span></li>
       </ul>
+
+      <div class="acoes-contato">
+        <button class="btn" id="copiar-email" data-en="Copy email"
+          data-copied-pt="&#10003; Copiado!" data-copied-en="&#10003; Copied!">Copiar e-mail</button>
+        <a class="btn btn-secundario" href="https://wa.me/5585997375179" target="_blank"
+          rel="noopener">WhatsApp</a>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; <span id="ano"></span> Weverson Felipe Soares Cardoso — Todos os direitos reservados</p>
+    <p>&copy; <span id="ano"></span> Weverson Felipe Soares Cardoso — <span data-en="All rights reserved">Todos
+      os direitos reservados</span></p>
   </footer>
 
   <script src="script.js"></script>

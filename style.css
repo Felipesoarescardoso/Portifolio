@@ -155,6 +155,32 @@ h3 {
   border-radius: 2px;
 }
 
+.nav-direita {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-toggle {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus {
+  border-color: var(--cor-destaque);
+  background: rgba(79, 156, 255, 0.15);
+  color: #fff;
+}
+
 /* ---------- Header / hero ---------- */
 
 header {
@@ -302,6 +328,49 @@ section .subtitulo::before {
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.9rem;
+}
+
+/* ---------- Stats ---------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid var(--borda-card);
+}
+
+.stat {
+  padding: 0.4rem;
+}
+
+.numero {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cor-destaque);
+  line-height: 1.1;
+}
+
+.rotulo {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: #6b6b73;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* ---------- Botões do contato ---------- */
+
+.acoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.75rem;
 }
 
 /* ---------- Grades e cards ---------- */
@@ -504,6 +573,15 @@ footer {
 
   section {
     padding: 2.25rem 1.2rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0.5rem;
+  }
+
+  .numero {
+    font-size: 2rem;
   }
 
   .menu-toggle {
