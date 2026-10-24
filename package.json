@@ -1,0 +1,12 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio estático — testes do gerador de QR Code",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

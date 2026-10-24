@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Admitidos RM Dashboard">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#4f9cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g opacity="0.18" fill="none" stroke="#ffffff" stroke-width="3"><rect x="250" y="140" width="300" height="220" rx="12"/><line x1="290" y1="320" x2="290" y2="240"/><line x1="350" y1="320" x2="350" y2="200"/><line x1="410" y1="320" x2="410" y2="260"/><line x1="470" y1="320" x2="470" y2="180"/><line x1="510" y1="320" x2="510" y2="220"/></g>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Admitidos RM Dashboard</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">placeholder — trocar por print real</text>
+</svg>

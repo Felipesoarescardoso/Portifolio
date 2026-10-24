@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Motor Transacional CNAB">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b91c1c"/>
+      <stop offset="1" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g opacity="0.18" fill="none" stroke="#ffffff" stroke-width="3"><rect x="300" y="140" width="200" height="240" rx="10"/><line x1="340" y1="200" x2="460" y2="200"/><line x1="340" y1="240" x2="460" y2="240"/><line x1="340" y1="280" x2="420" y2="280"/><rect x="340" y="310" width="80" height="30" rx="6"/></g>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Motor Transacional CNAB</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">placeholder — trocar por print real</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Integração de APIs SCANIA">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g opacity="0.18" fill="none" stroke="#ffffff" stroke-width="3"><path d="M280 250 L340 190"/><path d="M280 250 L340 310"/><path d="M520 250 L460 190"/><path d="M520 250 L460 310"/><line x1="360" y1="250" x2="440" y2="250"/></g>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Integração de APIs SCANIA</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">placeholder — trocar por print real</text>
+</svg>

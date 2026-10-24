@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Controle de Acesso MP-CE">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g opacity="0.18" fill="none" stroke="#ffffff" stroke-width="3"><path d="M400 150 L500 190 V260 C500 320 450 350 400 370 C350 350 300 320 300 260 V190 Z"/><circle cx="400" cy="250" r="18"/><line x1="400" y1="268" x2="400" y2="300"/></g>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Controle de Acesso MP-CE</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.75">placeholder — trocar por print real</text>
+</svg>
